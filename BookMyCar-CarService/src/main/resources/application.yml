@@ -36,7 +36,7 @@ eureka:
     fetch-registry: true
     register-with-eureka: true
     service-url:
-      defaultZone: http://bookmycar:8761/eureka
+      defaultZone: http://localhost:8761/eureka
 
    
         
