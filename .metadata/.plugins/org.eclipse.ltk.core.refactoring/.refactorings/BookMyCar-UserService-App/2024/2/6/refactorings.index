@@ -1,0 +1,16 @@
+1707066193438	Rename package 'com.example.demo'
+1707067226657	Rename package 'book.my.show.service.impl'
+1707067426846	Delete element
+1707067510620	Rename package 'book.my.show'
+1707067536627	Rename package 'book.my.show.config'
+1707067553479	Rename package 'book.my.show.controller'
+1707067566858	Rename package 'book.my.show.apiresponse'
+1707067578593	Rename package 'book.my.show.entity'
+1707067588805	Rename package 'book.my.show.exception'
+1707067598611	Rename package 'book.my.show.externalService'
+1707067608210	Rename package 'book.my.show.payload'
+1707067618553	Rename package 'book.my.show.repo'
+1707067629154	Rename package 'book.my.show.service'
+1707067639389	Rename package 'book.my.show.service.impl'
+1707126852120	Rename resource 'pplication.properties'
+1707136942985	Copy compilation unit

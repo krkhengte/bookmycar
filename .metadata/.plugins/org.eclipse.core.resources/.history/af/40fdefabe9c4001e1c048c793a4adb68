@@ -1,0 +1,5 @@
+package book.my.car.repo;
+
+public interface HotelRepository {
+
+}

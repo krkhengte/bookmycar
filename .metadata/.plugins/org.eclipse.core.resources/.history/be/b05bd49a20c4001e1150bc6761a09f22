@@ -1,0 +1,28 @@
+package book.my.car.response;
+
+import java.time.LocalDate;
+import java.util.Date;
+
+import lombok.Data;
+
+@Data
+public class CarResponse {
+
+	private String id;
+    private String carCompany;
+    private String carColor;
+    private String carModel;
+    private String carType;
+    private String carImg;
+    private String car360;
+    private String carOwner;
+    private String numPlate;
+    private LocalDate regDate;
+    private String insurance;
+    private LocalDate insuranceValidity;
+    private int passengerCapacity;
+    private String fuelType;
+    private String feature;
+    private int totalRunning;
+    private int charge;
+}

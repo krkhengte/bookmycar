@@ -1,0 +1,11 @@
+package book.my.car.service;
+
+import book.my.car.request.CarRequest;
+import book.my.car.response.CarResponse;
+
+public interface CarService {
+
+	public CarResponse saveCar(CarRequest carRequest);
+	
+	public 
+}

@@ -1,0 +1,5 @@
+package book.my.car.request;
+
+public class DriverApiRequest {
+
+}

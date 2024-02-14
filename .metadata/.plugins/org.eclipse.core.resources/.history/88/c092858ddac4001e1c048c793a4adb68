@@ -1,0 +1,11 @@
+package book.my.car.service;
+
+import book.my.car.request.BookingApiRequest;
+import book.my.car.response.BookingApiResponse;
+
+public interface BookingService {
+
+	public BookingApiResponse saveBooking(BookingApiRequest bRequest);
+	
+	public 
+}

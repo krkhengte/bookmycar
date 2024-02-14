@@ -1,0 +1,5 @@
+package book.my.car.response;
+
+public class DriverApiResponse {
+
+}

@@ -1,0 +1,8 @@
+package book.my.car.controller;
+
+import org.springframework.web.bind.annotation.RestController;
+
+@RestControllert
+public class DriverServiceController {
+
+}

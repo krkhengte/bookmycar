@@ -1,0 +1,20 @@
+package book.my.car.service.impl;
+
+import org.springframework.stereotype.Service;
+
+import book.my.car.request.HotelApiRequest;
+import book.my.car.response.HotelApiResponse;
+import book.my.car.service.HotelService;
+
+@Service
+public class HotelServiceImpl implements HotelService {
+
+	@Override
+	public HotelApiResponse saveHotel(HotelApiRequest hRequest) {
+		
+		
+		
+		return null;
+	}
+
+}

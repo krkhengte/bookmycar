@@ -1,0 +1,11 @@
+package book.my.car.response;
+
+public class HotelApiResponse {
+
+	private String id;
+	private String hotel;
+    private String room;
+    private int stay;
+    private boolean manageParking;
+    private double finalCost;
+}

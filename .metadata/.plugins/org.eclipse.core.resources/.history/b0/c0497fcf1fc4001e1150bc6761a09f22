@@ -1,0 +1,9 @@
+package book.my.car.repo;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import book.my.car.entity.CarDetails;
+
+public interface CarRepository extends JpaRepository<CarDetails, String>{
+
+}

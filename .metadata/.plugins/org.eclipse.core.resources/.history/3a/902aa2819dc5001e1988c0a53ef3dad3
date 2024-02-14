@@ -1,0 +1,12 @@
+package book.my.car.service;
+
+import book.my.car.request.AtmApiRequest;
+import book.my.car.response.AtmApiResponse;
+import book.my.car.response.CarBookingResponse;
+
+public interface AtmService {
+
+	public AtmApiResponse makePayment(AtmApiRequest apiRequest);
+
+	public CarBookingResponse 
+}

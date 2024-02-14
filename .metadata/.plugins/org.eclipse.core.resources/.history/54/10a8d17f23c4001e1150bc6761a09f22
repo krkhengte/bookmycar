@@ -1,0 +1,30 @@
+package book.my.car.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import book.my.car.request.CarRequest;
+import book.my.car.response.CarResponse;
+import book.my.car.service.CarService;
+
+
+@RestController
+@RequestMapping("/cars")
+public class CarServiceController {
+
+	@Autowired
+	private CarService carService;
+	
+	@PostMapping("/saveCar")
+	public ResponseEntity<CarResponse> saveCar(@RequestBody CarRequest carRequest){
+		
+		CarResponse saveCar = carService.saveCar(carRequest);
+		
+		return new ResponseEntity
+		
+	}
+}

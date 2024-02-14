@@ -1,0 +1,15 @@
+package book.my.car.externalService;
+
+import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+
+import book.my.car.response.CarResponse;
+
+@FeignClient()
+public interface CarService {
+
+	@GetMapping("/car/{carId}")
+	public CarResponse getCarByCarId(@PathVariable String carId);
+}

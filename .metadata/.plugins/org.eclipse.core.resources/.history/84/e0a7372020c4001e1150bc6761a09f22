@@ -1,0 +1,9 @@
+package book.my.car.request;
+
+import lombok.Data;
+
+@Data
+public class CarRequest {
+
+	
+}

@@ -1,0 +1,51 @@
+package book.my.car.service.impl;
+
+import java.util.List;
+
+import org.springframework.beans.BeanUtils;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import book.my.car.entity.CarDetails;
+import book.my.car.repo.CarRepository;
+import book.my.car.request.CarRequest;
+import book.my.car.response.CarResponse;
+import book.my.car.service.CarService;
+
+@Service
+public class CarServiceImpl implements CarService{
+
+	@Autowired
+	private CarRepository carRepository;
+	
+	@Override
+	public CarResponse saveCar(CarRequest carRequest) {
+		
+		CarResponse carResponse=new CarResponse();
+		
+		BeanUtils.copyProperties(carRequest, carResponse);
+		
+		CarDetails carDetails=new CarDetails();
+		
+		BeanUtils.copyProperties(carRequest, carDetails);
+		
+		carRepository.save(carDetails);
+		
+		
+		return carResponse;
+	}
+
+	@Override
+	public List<CarResponse> getAllCars() {
+		
+		List<CarDetails> carList = carRepository.findAll();
+		
+		for(CarDetails carDetails : carList) {
+			
+			
+		}
+		
+		return null;
+	}
+
+}

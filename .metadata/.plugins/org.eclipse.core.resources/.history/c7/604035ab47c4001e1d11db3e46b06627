@@ -1,0 +1,8 @@
+package book.my.car.entity;
+
+import jakarta.persistence.Entity;
+
+@Entity
+public class Driver {
+
+}

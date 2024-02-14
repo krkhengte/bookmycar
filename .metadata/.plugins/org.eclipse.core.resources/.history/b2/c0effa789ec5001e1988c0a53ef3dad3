@@ -1,0 +1,10 @@
+package book.my.car.repo;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import book.my.car.entity.AtmDetails;
+
+public interface AtmRepository extends JpaRepository<AtmDetails, String> {
+
+	public 
+}

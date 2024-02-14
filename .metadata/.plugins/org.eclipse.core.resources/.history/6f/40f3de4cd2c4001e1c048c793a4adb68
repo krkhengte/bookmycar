@@ -1,0 +1,34 @@
+package book.my.car.service.impl;
+
+import java.util.UUID;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import book.my.car.repo.BookingRepo;
+import book.my.car.request.BookingApiRequest;
+import book.my.car.response.BookingApiResponse;
+import book.my.car.service.BookingService;
+
+@Service
+public class BookingServiceImpl implements BookingService {
+
+	@Autowired
+	private BookingRepo bookingRepo;
+	
+	@Override
+	public BookingApiResponse saveBooking(BookingApiRequest bRequest) {
+		
+		String bookingId = UUID.randomUUID().toString();
+		
+		BookingApiResponse bApiResponse=new BookingApiResponse();
+		
+		bApiResponse.set__v(0);
+		bApiResponse.setId(bookingId);
+		
+		
+		
+		return null;
+	}
+
+}
